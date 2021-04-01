@@ -1,14 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import Wallet from "./components/Wallet";
+import Loot from "./components/Loot";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <h2>Loot check</h2>
-        <hr />
-        <Wallet />
-      </div>
-    );
-  }
-}
+export default () => {
+  return (
+    <div>
+      <h2>Loot check</h2>
+      <hr />
+      <Wallet />
+      <hr />
+      <Loot />
+    </div>
+  );
+};
